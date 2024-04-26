@@ -4,13 +4,40 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f8ff; /* Light blue background */
+  }
+  .center-box {
+    width: 200px;
+    height: 200px;
+    background-color: #add8e6; /* Light blue */
+    border: 2px solid black; /* 2px black border */
+    position: relative; /* Positioning context for absolute positioning */
+  }
+  .centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    color: purple;
+  }
+</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-
+  <div class="center-box">
+    <p class="centered-text">This is center.</p>
+  </div>
 </body>
 
 </html>
